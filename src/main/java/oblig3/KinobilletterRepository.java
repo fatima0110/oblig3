@@ -21,7 +21,7 @@ public class KinobilletterRepository {
     }
 
     public List<Kinobilletter> hentAlleKinobilletter() {
-        String sql = "SELECT * FORM Kinobilletter";
+        String sql = "SELECT * FROM Kinobilletter";
         List<Kinobilletter> alleKinobilletter = db.query(sql, new BeanPropertyRowMapper(Kinobilletter.class));
         return alleKinobilletter;
     }
